@@ -1,4 +1,5 @@
 import patterns.behavioralPatterns.chainOfResponsipilty.CoRTest;
+import patterns.behavioralPatterns.command.CommandTest;
 import patterns.structuralPatterns.adapter.v2.TestAdapterv2;
 import patterns.structuralPatterns.bridge.TestBridge;
 import patterns.structuralPatterns.composite.TestComposite;
@@ -10,6 +11,6 @@ import patterns.structuralPatterns.proxy.ProxyTest;
 public class Main {
     public static void main(String[] args) {
 
-        CoRTest.test();
+        CommandTest.test();
     }
 }
