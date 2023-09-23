@@ -2,11 +2,16 @@ package patterns.structuralPatterns.proxy;
 
 public class CashedYoutubeClass implements ThirdPartyYoutubeLib{
 
-    ThirdPartyYoutubeLib service = new ThirdPartyYoutubeClass();
+    private ThirdPartyYoutubeLib service = new ThirdPartyYoutubeClass();
+    private String additionalInfo = "additional";
+
+    public CashedYoutubeClass(ThirdPartyYoutubeLib service) {
+        this.service = service;
+    }
 
     @Override
-    public void listVideos() {
-
+    public String listVideos() {
+        return service.listVideos() +" "+ additionalInfo;
     }
 
     @Override

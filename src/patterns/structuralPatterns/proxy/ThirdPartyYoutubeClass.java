@@ -5,8 +5,8 @@ public class ThirdPartyYoutubeClass implements ThirdPartyYoutubeLib{
 
 
     @Override
-    public void listVideos() {
-
+    public String listVideos() {
+        return "List of Videos";
     }
 
     @Override

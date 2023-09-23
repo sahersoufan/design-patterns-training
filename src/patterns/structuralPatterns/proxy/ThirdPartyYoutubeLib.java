@@ -2,6 +2,6 @@ package patterns.structuralPatterns.proxy;
 
 public interface ThirdPartyYoutubeLib {
 
-    public void listVideos();
+    public String listVideos();
     public void getVideos();
 }
